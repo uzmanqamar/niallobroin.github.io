@@ -1,0 +1,53 @@
+
+# Syntax highlighting
+markdown:            redcarpet
+highlighter:         rouge
+
+# Permalinks
+permalink:           /:title.html
+
+
+# Setup
+timezone:            BST
+locale:              en_gb
+name:		     ' Name'
+title:               'NIALL OBYRNES'
+tagline:             'web developer - linux user'
+description:         'Happily blogging about web development, linux and general stuff'
+url:                 https://jekyll-now-redux.aerobatic.io
+rss:                 rss feed url
+baseurl:             '/'
+baseurl_posts_img:   '/assets/img/posts/'
+baseurl_featured_img: '/assets/img/hero/'
+baseurl_featured_thumbnail: '/assets/img/thumbnail/'
+baseurl_javascripts: '/assets/js/'
+icon:                '/assets/img/icon.png' #[best 300px X 300px]
+disqus:              whats-my-name # get it on https://disqus.com/admin/
+
+author:
+  name:           	 Darren Young
+  url:            	 https://dyoungwd.aerobatic.io
+  facebook:          username
+  twitter:           dyoungwd
+  google_plus:       username
+  linkedin:          username
+  dribbble:          username
+  pinterest:         username
+  github:            dazzy
+  bitbucket:         dyoungwd
+
+fb_admins:           your facebook profile id
+fb_appid:            your facebook app id
+
+# Server
+destination:      	 ./_site
+exclude:          	 [".editorconfig", ".gitignore", "bower.json", "composer.json", "CONTRIBUTING.md", "CNAME", "LICENSE", "Gruntfile.js", "package.json", "node_modules", "README.md", "sass", "haml"]
+port:             	 9001
+
+defaults:
+  -
+    scope:
+      path: "/blog/_posts"
+      type: "posts"
+    values:
+      layout: "default"
