@@ -29,8 +29,8 @@ title:               'NIALL OBYRNES'
 tagline:             ' '
 description:         ''
 url:                 http://niallobyrnes.github.io/
-rss:
-baseurl:             '/niallobyrnes.github.io'
+rss:                 rss feed url
+baseurl:             '/'
 baseurl_posts_img:   '/assets/img/posts/'
 baseurl_featured_img: '/assets/img/hero/'
 baseurl_featured_thumbnail: '/assets/img/thumbnail/'
@@ -59,28 +59,6 @@ exclude:          	 [".editorconfig", ".gitignore", "bower.json", "composer.json
 port:             	 9001
 
 defaults:
-
-    -
-      scope:
-        path: "contact"
-        type: "pages"
-      values:
-        layout: "default"
-
-    -
-      scope:
-        path: "blog"
-        type: "pages"
-      values:
-        layout: "default"
-
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "default"
-
   -
     scope:
       path: "/blog/_posts"
