@@ -3,6 +3,14 @@
 markdown:            kramdown
 highlighter:         rouge
 
+# Files excluded from Jekyll builds
+exclude:
+- README.md
+- humans.txt
+- jekyll-serve.sh
+- .git
+
+
 # Permalinks
 permalink:           /:title.html
 
