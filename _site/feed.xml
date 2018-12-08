@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title> NIALL OBYRNES</title>
+		<description></description>
+		<link>http://localhost:9001</link>
+		<atom:link href="http://localhost:9001/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Jekyll Now REDUX</title>
+				
+				
+					<description>the easiest possible workflow for setting up a Jekyll powered website and blog ...</description>
+				
+				<pubDate>Sun, 21 May 2017 01:00:00 +0000</pubDate>
+				<link>http://localhost:9001/jekyll-now-redux2.html</link>
+				<guid isPermaLink="true">http://localhost:9001/jekyll-now-redux2.html</guid>
+			</item>
+		
+			<item>
+				<title>OLD POST</title>
+				
+				
+					<description>the easiest possible workflow for setting up a Jekyll powered website and blog ...</description>
+				
+				<pubDate>Sun, 21 May 2017 01:00:00 +0000</pubDate>
+				<link>http://localhost:9001/jekyll-now-redux.html</link>
+				<guid isPermaLink="true">http://localhost:9001/jekyll-now-redux.html</guid>
+			</item>
+		
+	</channel>
+</rss>

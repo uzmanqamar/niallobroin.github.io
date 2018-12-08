@@ -1,0 +1,55 @@
+
+   
+
+The humans.txt file explains the technology, and graphic assets
+behind this site.
+
+_______________________________________________________________________________
+
+PEOPLE
+
+This Jekyll theme was hand-crafted by:
+
+http://www.twitter.com/dyoungwd
+https://bitbucket.org/dyoung
+https://github.com/dyoungwd
+https://behance.net/dyoungwd
+
+_______________________________________________________________________________
+
+TECHNOLOGY
+
+Jekyll
+http://jekyllrb.com/
+
+jQuery
+http://jquery.com/
+
+
+
+Prism (syntax highlighter)
+http://prismjs.com/
+
+
+
+Github
+https://github.com/
+
+_______________________________________________________________________________
+
+GRAPHIC ASSETS
+
+Roboto (font)
+https://www.google.com/fonts/specimen/Roboto
+
+PT Sans (font)
+https://www.google.com/fonts/specimen/PT+Sans
+
+Source Serif Pro (font)
+https://www.google.com/fonts/specimen/Source+Serif+Pro
+
+Entypo (icons)
+http://www.entypo.com/
+
+Streamline (icons)
+http://www.streamlineicons.com/
