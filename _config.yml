@@ -3,6 +3,7 @@
 markdown:            kramdown
 highlighter:         rouge
 
+
 # Files excluded from Jekyll builds
 exclude:
 - README.md
@@ -12,6 +13,9 @@ exclude:
 - install-jekyll.sh
 - .git
 
+plugins:
+  - github-pages
+  - jekyll-feed
 
 # Permalinks
 permalink:           /:title.html
