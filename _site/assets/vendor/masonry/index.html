@@ -15,7 +15,7 @@
 
   
 
-  <link rel="canonical" href="http://localhost:9001/blog/">
+  <link rel="canonical" href="http://localhost:9001/assets/vendor/masonry/">
 
   
 
@@ -25,15 +25,15 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@username">
   <meta name="twitter:creator" content="@username">
-  <meta name="twitter:title" content="D Young">
+  <meta name="twitter:title" content="Masonry">
   <meta name="twitter:description" content="">
   <meta name="twitter:image" content="http://localhost:9001//assets/img/icon.png">
-  <meta name="twitter:url" content="http://localhost:9001/blog/">
+  <meta name="twitter:url" content="http://localhost:9001/assets/vendor/masonry/">
 
   <!-- Open graph -->
-  <meta property="og:title" content="D Young">
+  <meta property="og:title" content="Masonry">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://localhost:9001/blog/">
+  <meta property="og:url" content="http://localhost:9001/assets/vendor/masonry/">
   <meta property="og:image" content="http://localhost:9001//assets/img/icon.png">
   <meta property="og:description" content="">
   <meta property="og:site_name" content=" NIALL OBYRNES">
@@ -50,7 +50,7 @@
 
   <title>
     
-      D Young &middot; NIALL OBYRNES
+      Masonry &middot; NIALL OBYRNES
     
   </title>
 
@@ -118,74 +118,84 @@
   <body>
 
 
-    <section class="section--first section--frontpage">
-  <div class="section-title">
-    <div class="container">
-      <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-10">
-  <div class="row">
-    <div class="col-xs-4" style="padding-left:2%;"><img src="/assets/img/logo/logo.png"></div>
-    <div class="col-xs-8" style="padding-top:8px;">
-      <h4> <a href="/sail">Sail</a> | <a href="/dive">Dive</a> | <a href="/mountain">Mountain</a> | <a href="/travel">Travel</a> | <a href="/turbulence">Turbulence</a> | <a href="/blog">Blog</a> | <a href="/contact">Contact</a></h4>
-    </div>
+    <h1 id="masonry">Masonry</h1>
 
-  </div>
+<p><em>Cascading grid layout library</em></p>
 
-</div>
+<p>Masonry works by placing elements in optimal position based on available vertical space, sort of like a mason fitting stones in a wall. You’ve probably seen it in use all over the Internet.</p>
 
+<p>See <a href="http://masonry.desandro.com">masonry.desandro.com</a> for complete docs and demos.</p>
 
-      <div class="postMeta-wrapper postMeta-wrapper--frontpage">
-        <ul class="postMeta">
-          <li class="postMeta-tagline">
+<h2 id="install">Install</h2>
 
-          </li>
-        </ul>
-      </div>
+<h3 id="download">Download</h3>
 
-    </div>
-  </div>
+<ul>
+  <li><a href="https://github.com/desandro/masonry/raw/master/dist/masonry.pkgd.js">masonry.pkgd.js</a> un-minified, or</li>
+  <li><a href="https://github.com/desandro/masonry/raw/master/dist/masonry.pkgd.min.js">masonry.pkgd.min.js</a> minified</li>
+</ul>
 
-</section>
+<h3 id="cdn">CDN</h3>
 
-<section class="section--postsWrapper">
-  <div class="container">
-    <div class="blockGroup">
-      <ul class="blockGroup-list">
-        
-          <li class="block">
-            <div class="postArticle-wrapper">
-              <article class="postArticle postArticle--short">
-                
-                  <a href="/jekyll-now-redux2.html">
-                    <div class="postArticle-image desaturate" style="background-image:url('/assets/img/hero/diver_dolphin-dive.jpg')">
-                    </div>
-                  </a>
-                
-                <a class="postArticle-title" href="/jekyll-now-redux2.html">Jekyll Now REDUX</a>
-              </article>
-              <div class="block-postMeta">21 May 2017</div>
-            </div>
-          </li>
-        
-          <li class="block">
-            <div class="postArticle-wrapper">
-              <article class="postArticle postArticle--short">
-                
-                  <a href="/jekyll-now-redux.html">
-                    <div class="postArticle-image desaturate" style="background-image:url('/assets/img/hero/jn.png')">
-                    </div>
-                  </a>
-                
-                <a class="postArticle-title" href="/jekyll-now-redux.html">OLD POST</a>
-              </article>
-              <div class="block-postMeta">21 May 2017</div>
-            </div>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
+<p>Link directly to Masonry files on <a href="https://npmcdn.com/">npmcdn</a>.</p>
 
-</section>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://npmcdn.com/masonry-layout@4.1/dist/masonry.pkgd.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="c">&lt;!-- or --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://npmcdn.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<h3 id="package-managers">Package managers</h3>
+
+<p>Bower: <code class="highlighter-rouge">bower install masonry --save</code></p>
+
+<p><a href="https://www.npmjs.com/package/masonry-layout">npm</a>: <code class="highlighter-rouge">npm install masonry-layout --save</code></p>
+
+<h2 id="initialize">Initialize</h2>
+
+<p>With jQuery</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span><span class="p">(</span><span class="s1">'.grid'</span><span class="p">).</span><span class="nx">masonry</span><span class="p">({</span>
+  <span class="c1">// options...</span>
+  <span class="na">itemSelector</span><span class="p">:</span> <span class="s1">'.grid-item'</span><span class="p">,</span>
+  <span class="na">columnWidth</span><span class="p">:</span> <span class="mi">200</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>With vanilla JavaScript</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// vanilla JS</span>
+<span class="c1">// init with element</span>
+<span class="kd">var</span> <span class="nx">grid</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'.grid'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">msnry</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Masonry</span><span class="p">(</span> <span class="nx">grid</span><span class="p">,</span> <span class="p">{</span>
+  <span class="c1">// options...</span>
+  <span class="na">itemSelector</span><span class="p">:</span> <span class="s1">'.grid-item'</span><span class="p">,</span>
+  <span class="na">columnWidth</span><span class="p">:</span> <span class="mi">200</span>
+<span class="p">});</span>
+
+<span class="c1">// init with selector</span>
+<span class="kd">var</span> <span class="nx">msnry</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Masonry</span><span class="p">(</span> <span class="s1">'.grid'</span><span class="p">,</span> <span class="p">{</span>
+  <span class="c1">// options...</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>With HTML</p>
+
+<p>Add a <code class="highlighter-rouge">data-masonry</code> attribute to your element. Options can be set in JSON in the value.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid"</span> <span class="na">data-masonry=</span><span class="s">'{ "itemSelector": ".grid-item", "columnWidth": 200 }'</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-item"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-item"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  ...
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<h2 id="license">License</h2>
+
+<p>Masonry is released under the <a href="http://desandro.mit-license.org">MIT license</a>. Have at it.</p>
+
+<hr />
+
+<p>Made by David DeSandro</p>
 
 
   
