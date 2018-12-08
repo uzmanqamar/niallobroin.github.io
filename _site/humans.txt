@@ -1,8 +1,5 @@
-    __  _______________ __ ________  __
-   /  |/  /  _/ ____/ //_// ____/\ \/ /
-  / /|_/ // // /   / ,<  / __/    \  /
- / /  / // // /___/ /| |/ /___    / /
-/_/  /_/___/\____/_/ |_/_____/   /_/
+
+   
 
 The humans.txt file explains the technology, and graphic assets
 behind this site.
@@ -13,9 +10,10 @@ PEOPLE
 
 This Jekyll theme was hand-crafted by:
 
-Vincent Chan
-Interaction design, visual design, content, web development
-http://www.twitter.com/vincentchan
+http://www.twitter.com/dyoungwd
+https://bitbucket.org/dyoung
+https://github.com/dyoungwd
+https://behance.net/dyoungwd
 
 _______________________________________________________________________________
 
@@ -27,23 +25,12 @@ http://jekyllrb.com/
 jQuery
 http://jquery.com/
 
-imagesLoaded
-https://github.com/desandro/imagesloaded
 
-Sass
-http://sass-lang.com/
-
-SUIT CSS (styling methodology)
-https://suitcss.github.io/
-
-gulp.js
-http://gulpjs.com/
 
 Prism (syntax highlighter)
 http://prismjs.com/
 
-Browsersync
-http://www.browsersync.io/
+
 
 Github
 https://github.com/

@@ -187,3 +187,25 @@ a {
     color: #999 !important;
     outline: none;
 }
+
+.ms-gallery-template .ms-slide-info {
+    padding: 14px 8px;
+    position: absolute !important;
+    float: left;
+    width: auto;
+    min-height: 100px !important;
+}
+.ms-gallery-template .ms-gallery-botcont {
+    height: 120px !important;
+    background: black;
+    color: white;
+    font-weight: 300;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    position: relative;
+    padding: 10px;
+}
+.ms-gal-playbtn {
+
+    visibility: hidden !important;
+}
