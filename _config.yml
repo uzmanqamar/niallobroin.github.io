@@ -8,6 +8,8 @@ exclude:
 - README.md
 - humans.txt
 - jekyll-serve.sh
+- install-ruby-gem.sh
+- install-jekyll.sh
 - .git
 
 
