@@ -3,6 +3,10 @@
   margin: 0 !important;
 }
 
+.container {
+  padding-top: 25px !important;
+}
+
 .ms-gallery-template .ms-gallery-botcont {
   height: 55px;
   background: black;
@@ -213,5 +217,10 @@ a {
 /*menu*/
 .u-header {
     position: absolute !important;
-    
+
+}
+
+.navbar {
+
+    float: left !important;
 }
