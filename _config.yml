@@ -3,6 +3,7 @@
 markdown:            kramdown
 highlighter:         rouge
 
+
 # Files excluded from Jekyll builds
 exclude:
 - README.md
@@ -12,6 +13,9 @@ exclude:
 - install-jekyll.sh
 - .git
 
+plugins:
+  - github-pages
+  - jekyll-feed
 
 # Permalinks
 permalink:           /:title.html
@@ -24,7 +28,7 @@ name:		     ' NIALL OBYRNES'
 title:               'NIALL OBYRNES'
 tagline:             ' '
 description:         ''
-url:                 http://niallobyrnes.github.io
+url:                 http://niallobyrnes.github.io/
 rss:                 rss feed url
 baseurl:             '/'
 baseurl_posts_img:   '/assets/img/posts/'

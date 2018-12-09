@@ -76,8 +76,8 @@
 
 
   {% if page.syntaxHighlighter %}
-    <link rel="stylesheet" href="{{ site.baseurl }}assets/css/prism-okaidia.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}assets/css/prism-line-numbers.css">
+    <link rel="stylesheet" href="{{ "/assets/css/prism-okaidia.css" | relative_url }}" >
+    <link rel="stylesheet" href="{{ "/assets/css/prism-line-numbers.css" | relative_url }}" >
   {% endif %}
 
   <!-- Fonts -->
@@ -86,38 +86,38 @@
   <link href='http://fonts.googleapis.com/css?family=PT+Sans:700' rel='stylesheet' type='text/css'>
 
   <!-- Fav-->
-  <link rel="shortcut icon" href="{{ site.baseurl }}avicon.ico">
+  <link rel="shortcut icon" href="{{ "/favicon.ico" | relative_url }}">
 
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600">
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto%3A700%2C300">
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway%3A400%2C800%2C500">
 
   <!-- CSS Global Compulsory -->
-  <link rel="stylesheet" href="{{ site.baseurl }}assets/vendor/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ "/assets/vendor/bootstrap/bootstrap.min.css" | relative_url }}">
 
   <!-- CSS Implementing Plugins -->
-  <link rel="stylesheet" href="{{ site.baseurl }}assets/vendor/icon-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}assets/vendor/icon-etlinefont/style.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}assets/vendor/icon-hs/style.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}assets/vendor/icon-line-pro/style.css">
+  <link rel="stylesheet" href="{{ "/assets/vendor/icon-awesome/css/font-awesome.min.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/vendor/icon-etlinefont/style.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/vendor/icon-hs/style.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/vendor/icon-line-pro/style.css" | relative_url }}">
 
-  <link rel="stylesheet" href="{{ site.baseurl }}assets/vendor/animate.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}assets/vendor/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="{{ "/assets/vendor/animate.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/vendor/slick-carousel/slick/slick.css" | relative_url }}">
 
-  <link rel="stylesheet" href="{{ site.baseurl }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}assets/vendor/hamburgers/hamburgers.min.css">
+
+  <link rel="stylesheet" href="{{ "/assets/vendor/hamburgers/hamburgers.min.css" | relative_url }}">
 
   <!-- CSS Unify -->
-  <link rel="stylesheet" href="{{ site.baseurl }}assets/css/unify.css">
+  <link rel="stylesheet" href="{{ "/assets/css/unify.css" | relative_url }}">
 
   <!-- Blog -->
-  <link rel="stylesheet" href="{{ site.baseurl }}assets/css/blog.css">
+  <link rel="stylesheet" href="{{ "/assets/css/blog.css" | relative_url }}">
 
   <!-- Master Slider -->
-  <link rel="stylesheet" href="{{ site.baseurl }}assets/vendor/master-slider/source/assets/css/masterslider.main.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}assets/css/style.css">
+  <link rel="stylesheet" href="{{ "/assets/vendor/master-slider/source/assets/css/masterslider.main.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
   <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ "/feed.xml" | relative_url }}">
 
   <!-- modernizer -->
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
