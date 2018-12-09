@@ -209,3 +209,9 @@ a {
 
     visibility: hidden !important;
 }
+
+/*menu*/
+.u-header {
+    position: absolute !important;
+    
+}
