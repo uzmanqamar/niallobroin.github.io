@@ -1,0 +1,122 @@
+
+<!-- JS Global Compulsory -->
+<script src="{{ "/assets/vendor/jquery/jquery.min.js" | relative_url }}"></script>
+<script src="{{ "/assets/vendor/jquery-migrate/jquery-migrate.min.js" | relative_url }}"></script>
+<script src="{{ "/assets/vendor/jquery.easing/js/jquery.easing.min.js" | relative_url }}"></script>
+<script src="{{ "/assets/vendor/popper.min.js" | relative_url }}"></script>
+<script src="{{ "/assets/vendor/bootstrap/bootstrap.min.js" | relative_url }}"></script>
+
+<!-- JS Revolution Slider -->
+<script src="{{ "/assets/vendor/revolution-slider/revolution/js/jquery.themepunch.tools.min.js" | relative_url }}"></script>
+<script src="{{ "/assets/vendor/revolution-slider/revolution/js/jquery.themepunch.revolution.min.js" | relative_url }}"></script>
+
+<script src="{{ "/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.actions.min.js" | relative_url }}"></script>
+<script src="{{ "/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.carousel.min.js" | relative_url }}"></script>
+<script src="{{ "/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.kenburn.min.js" | relative_url }}"></script>
+<script src="{{ "/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.layeranimation.min.js" | relative_url }}"></script>
+<script src="{{ "/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.migration.min.js" | relative_url }}"></script>
+<script src="{{ "/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.navigation.min.js" | relative_url }}"></script>
+<script src="{{ "/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.parallax.min.js" | relative_url }}"></script>
+<script src="{{ "/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.slideanims.min.js" | relative_url }}"></script>
+<script src="{{ "/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.video.min.js" | relative_url }}"></script>
+
+
+
+
+
+<!-- JS Plugins Init. -->
+<script>
+
+  var tpj = jQuery;
+
+  var revapi485;
+  tpj(document).ready(function () {
+    if (tpj("#rev_slider_485_1").revolution == undefined) {
+      revslider_showDoubleJqueryError("#rev_slider_485_1");
+    } else {
+      revapi485 = tpj("#rev_slider_485_1").show().revolution({
+        sliderType: "standard",
+        jsFileLocation: "revolution/js/",
+        sliderLayout: "fullscreen",
+        dottedOverlay: "none",
+        delay: 9000,
+        navigation: {
+          keyboardNavigation: "off",
+          keyboard_direction: "horizontal",
+          mouseScrollNavigation: "on",
+          mouseScrollReverse: "default",
+          onHoverStop: "off",
+          bullets: {
+            enable: true,
+            hide_onmobile: false,
+            style: "hermes",
+            hide_onleave: false,
+            direction: "vertical",
+            h_align: "right",
+            v_align: "center",
+            h_offset: 20,
+            v_offset: 0,
+            space: 5,
+            tmp: ''
+          }
+        },
+        responsiveLevels: [1240, 1024, 778, 480],
+        visibilityLevels: [1240, 1024, 778, 480],
+        gridwidth: [1240, 1024, 778, 480],
+        gridheight: [868, 768, 960, 720],
+        lazyType: "smart",
+        parallax: {
+          type: "scroll",
+          origo: "slidercenter",
+          speed: 400,
+          levels: [5, 10, 15, 20, 25, 30, 35, 40, 45, 46, 47, 48, 49, 50, 51, 55],
+          type: "scroll",
+        },
+        shadow: 0,
+        spinner: "off",
+        stopLoop: "on",
+        stopAfterLoops: 0,
+        stopAtSlide: 1,
+        shuffle: "off",
+        autoHeight: "off",
+        fullScreenAutoWidth: "off",
+        fullScreenAlignForce: "off",
+        fullScreenOffsetContainer: "",
+        fullScreenOffset: "",
+        disableProgressBar: "on",
+        hideThumbsOnMobile: "off",
+        hideSliderAtLimit: 0,
+        hideCaptionAtLimit: 0,
+        hideAllCaptionAtLilmit: 0,
+        debugMode: false,
+        fallbacks: {
+          simplifyAll: "off",
+          nextSlideOnWindowFocus: "off",
+          disableFocusListener: false,
+        }
+      });
+      var delaytimer,
+        blurStart = 0,
+        blurEnd = 10,
+        blurElement = {a: blurStart}; //start the blur at 0 pixels
+
+      function applyBlur() {
+        punchgs.TweenLite.set(revapi485.find('.tp-revslider-slidesli'), {
+          webkitFilter: "blur(" + blurElement.a + "px)",
+          filter: "blur(" + blurElement.a + "px)"
+        });
+      };
+
+      jQuery('body').on('click', '#toggledmenu', function () {
+        clearTimeout(delaytimer);
+        var btn = jQuery(this);
+        delaytimer = setTimeout(function () {
+          if (btn.hasClass('toggled_menu'))
+            punchgs.TweenLite.to(blurElement, 0.5, {a: blurEnd, onUpdate: applyBlur});
+          else
+            punchgs.TweenLite.to(blurElement, 0.5, {a: blurStart, onUpdate: applyBlur});
+        }, 50);
+      });
+    }
+  });
+</script>
