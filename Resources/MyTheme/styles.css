@@ -14,24 +14,39 @@ body {
 }
 
 .wrapper {
-    max-width: 600px;
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
-    padding: 40px;
+/*    padding: 40px;*/
     text-align: justify;
 
 }
 
 header {
     background-color: #fff;
+    padding: 30px;
 }
 
+.wrapper p{
+    
+    background : grey !important;
+    color : white !important;
+/*    margin-top : 0px;*/
+    max-width : 30%;
+/*     position: fixed;*/
+/*    bottom : 0;*/
+/*    left : 0;*/
+/*    opacity: 0.3;*/
+    margin-top : -130px;
+    margin-bottom : 50px;
+/*    padding-top : 50px;*/
+}
 header .wrapper {
     max-width: 2000px;
     margin-left: 0px;
     margin-right: auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
+/*    padding-top: 30px;*/
+/*    padding-bottom: 30px;*/
     text-align: left;
     background: #fff;
 }
@@ -168,11 +183,11 @@ footer {
     
 }
 img {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0px;
+    margin-right: 0px;
     display: block;
     max-width: 100%;
-//    max-height:
+    max-height: auto;
     
 }
 img .bigger{
